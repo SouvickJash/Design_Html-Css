@@ -1,0 +1,31 @@
+table {
+  width: 250px;
+  size: 100px;
+  background-color: rgb(237, 247, 248);
+  font-family: sans-serif;
+  margin-top: 11px;
+  
+}
+th {
+  color: aliceblue;
+}
+tr {
+  text-align: center;
+  font-family: sans-serif;
+}
+.img-dec{
+    margin-left: -200px;
+}
+.last-colum {
+  height: 25px;
+}
+
+.image-details{
+    border-radius: 15px;
+    width: 22px;
+}
+
+
+/* td{
+  background-image: url('./Images/IndependenceDay.jpg');
+} */
