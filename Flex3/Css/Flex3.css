@@ -1,0 +1,79 @@
+body {
+  background-color: rgb(49, 49, 49);
+}
+.container {
+  width: 100%;
+  height: 520px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.main {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+.box1 {
+  width: 100%;
+  height: 250px; /*side width calculate*/
+  background-color: rgb(248, 46, 46);
+}
+.box2 {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(34, 210, 210);
+  /* flex-direction: column;
+    display: flex; */
+}
+.box3 {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(227, 165, 32);
+}
+.main2 {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+.box4 {
+  width: 32.8%;
+  height: 250px; /*side width calculate*/
+  background-color: rgb(247, 246, 243);
+}
+.main3 {
+  display: flex;
+  gap: 10px;
+  width: 203%;
+  margin-top: 90px;
+}
+.box5 {
+  width: 100%;
+  height: 200px;
+  background-color: rgb(227, 165, 32);
+}
+.box6 {
+  width: 100%;
+  height: 200px;
+  background-color: rgb(247, 246, 243);
+}
+.box7 {
+  width: 100%;
+  height: 400px;
+  background-color: rgb(248, 46, 46);
+}
+.main4 {
+  display: flex;
+  gap: 10px;
+  width: 203%;
+  margin-top: 195px;
+}
+.box8 {
+  width: 200%;
+  height: 185px;
+  background-color: rgb(248, 46, 46);
+}
+.box9 {
+  width: 110%;
+  height: 185px;
+  background-color: rgb(34, 210, 210);
+}
