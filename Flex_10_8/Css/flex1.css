@@ -1,0 +1,47 @@
+*{
+    margin: 0px auto;
+    font-family: sans-serif;
+}
+header {
+  width: 100%;
+  height: 100px;
+  background-color: chartreuse;
+  margin-bottom: 10px;
+}
+.container {
+  width: 100%;
+  height: 310px;
+  display: flex;
+  gap: 10px;
+  /* background-color: aqua; */
+}
+.nav {
+  width: 30%;
+  height: 300px;
+  background-color: chartreuse;
+}
+
+.col1 {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.article {
+  width: 100%;
+  height: 200px;
+  background-color: chartreuse;
+}
+.ads {
+  width: 100%;
+  height: 100px;
+  background-color: chartreuse;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: chartreuse;
+  margin-bottom: 10px;
+}
