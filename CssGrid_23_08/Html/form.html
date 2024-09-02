@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html || form</title>
+    <link rel="stylesheet" href="../Css/form.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="head">
+        <img src="../images/logo.png" alt="" />
+        <h5>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+            <marquee direction="LEFT" onmouseover="this.stop();" onmouseout="this.start();" behavior="scroll" bgcolor="lightgreen" scrollamount="2" height="25px" width="200px" loop="infinite" >
+              STATE OF LOUISIANA.
+          </marquee>
+          
+          <br />CASH MANAGEMENT REVIEW BOARDS(R.S 39.372) <br />
+          BANK ACCOUNT APPLICATION FORM
+        </h5>
+        <p>
+          CMRB001 <br />
+          06-14-12
+        </p>
+      </div>
+      <h4>Introduction:</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus
+        doloremque error eveniet molestiae ipsam expedita animi eaque magnam
+        repellat sint asperiores repellendus adipisci delectus neque porro
+        maiores, fugiat nobis voluptatibus.
+      </p>
+      <br /><br />
+      <form action="">
+        <section class="one">
+          <label for="">1. Applicant Agency</label>
+          <input
+            type="text"
+            name="Applicant_Agency"
+            id=""
+            placeholder="Applicant_Agency"
+          />
+        </section>
+        <section class="two">
+          <label for="">2. ISIS Agency Number</label>
+          <input
+            type="text"
+            name="ISIS_Agency_Number"
+            id=""
+            placeholder="ISIS Agency Number"
+          />
+        </section>
+        <section class="three">
+          <label for="">2. Request Type: </label><br />
+          <input type="checkbox" name="checkbox" id="" />&nbsp; Request for New
+          Bank Account <br />
+
+          <label for="">Bank Name And City</label>
+          <input
+            type="text"
+            name="Bank_Name_And_City"
+            placeholder="Bank Name And City"
+          />
+          <label for="">Account Name</label>
+          <input
+            type="text"
+            name="Account Name"
+            placeholder="Account Name"
+          /><br />
+
+          <input type="checkbox" name="checkbox" id="check1" />&nbsp; Approval of an
+          Existing Bank Account <br />
+          <input type="checkbox" name="checkbox" id="check2" />&nbsp; Approval for
+          Change in an Approved Bank Account <br />
+
+          <label for="">Bank Name and City</label>
+          <input
+            type="text"
+            name="Bank_Name_And_City"
+            placeholder="Bank Name and City"
+          /><br />
+          <label for=""> Account Name</label>
+          <input type="text" name="Account Name2" placeholder="Account Name" />
+          <label for=""> Account Number</label>
+          <input type="text" name="Account_number" placeholder="Account Number" />
+        </section>
+        <section class="four">
+           <label for="">4. Type of Account</label>
+           <input type="radio" name="radio" id="radio">Petty Cash
+           <input type="radio" name="radio" id="radio">Payroll
+           <input type="radio" name="radio" id="radio">Travel
+           <input type="radio" name="radio" id="radio">Other (specify)
+           <input type="text" name="type_of_account">
+        </section>
+        <section class="six">
+          <label for="">6. Interest Bearing Account</label>
+          <input type="radio" name="radio" id="radio">Yes
+          <input type="radio" name="radio" id="radio">No
+        </section>
+        <section class="seven">
+          <label for=""> 7. List all other Bank Accounts Agency has Established </label>
+          <p> (Complete Item 15 on page 2 or use CMRB Continuation Sheet (CMBR002) if additional space is needed to provide applicable information)</p>
+        <label for=""> Bank Name and City</label>
+        <input type="text" name="Bank_Name_And_City"placeholder="Bank Name and City"/>
+          <label for=""> Account Name</label>
+          <input type="text" name="Account Name" placeholder="Account Name" />
+          <label for=""> Account Number</label>
+          <input type="text" name="Account_number" placeholder="Account number" />
+          <label for="">Date Approved by CMRB</label>
+          <input type="text" name="Date Approved by CMRB" placeholder="Date Approved by CMRB" />
+          <label for="">Purpose of the Account</label>
+          <input type="text" name="Purpose_account" placeholder="Purpose of the Account" />
+          <label for=""> Bank Name and City</label>
+        <input type="text" name="Bank_Name_And_City"placeholder="Bank Name and City"/>
+        <label for=""> Account Name</label>
+        <input type="text" name="Account Name" placeholder="Account Name" />
+        <label for=""> Account Number</label>
+          <input type="text" name="Account_number" placeholder="Account number" />
+          <label for="">Date Approved by CMRB</label>
+          <input type="text" name="Date Approved by CMRB" placeholder="Date Approved by CMRB" />
+          <label for="">Purpose of the Account</label>
+          <input type="text" name="Purpose_account" placeholder="Purpose of the Account" />
+        </section>
+        <section class="eight">
+          <p> 8. Explain the need for New/Change in Existing Bank Account and include why existing bank account(s) listed in item 7 above cannot be  
+            used for this purpose.</p>
+            <input type="text" name="section-eight">
+        </section>
+        <section class="nine">
+           <p>9. Additional Information Regarding Request</p>
+           <textarea name="" id="" rows="5" cols="50" placeholder="Please wirte"></textarea>
+        </section>
+        <section class="ten">
+           <p style="display: inline-block;">Contact details</p>
+           <select name="" id="">
+               <option value="">+91</option>
+               <option value="">+61</option>
+               <option value="">+43</option>
+               <option value="">+33</option>
+               <option value="">+353</option>
+           </select>
+           <input type="text" placeholder="Phone no">
+        </section>
+        <section class="end">
+          <h4> Submission Requirements </h4>
+          <p>The form must be completed in entirety to avoid delay in review of application. 
+            All pertinent documentation must be submitted with the form as indicated below (as applicable) </p>
+         
+            <ol>
+              1.  Schedule or Method of Calculation for bank compensation (Identified in Item 5) <br>
+              2.  Statement from Bank for compliance with R.S 49:321 requirements if daily balance is greater than $100,000.00 <em>(Identified in Item 10)</em> <br>
+              3.  Copy of Federal Regulations if exempt from funds deposited into State Treasury <em>(Identified in Item 12)</em>
+            </ol>
+           <p>Submit completed applications with required documentation to: 
+            If sent US Mail: Department of Treasury, Fiscal Control Division, PO Box 44154, Baton Rouge, LA 70804 
+            If sent other Delivery Services: Department of Treasury, Fiscal Control Division, 445 North Blvd., City Plaza 1, 7th Floor, Baton Rouge, LA 70802
+         Date Submitted * Submitted By:
+         This application has been prepared and is being submitted in compliance with <em><u>R.S. 39:372</u></em></p>
+           <br><br>
+          <label for=""> Submitted By:</label>
+         <input type="text" name="submitted" placeholder="" />
+          <label for="">Date Submitted*:</label>
+         <input type="date" name="submitted" placeholder=""/>
+          <label for="">Final Submit*:</label>
+         <input type="submit" name="submit" placeholder="" style="border-radius: 5px;"/><br><br>
+        </section>
+      </form>
+    </div>
+  </body>
+</html>

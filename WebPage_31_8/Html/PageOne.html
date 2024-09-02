@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEB||PAGE</title>
+    <!-- <link rel="stylesheet" href="../Css/page2.css"> -->
+    <style>
+      * {
+        margin: auto;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      .container {
+        height: 2200px;
+      }
+      .header {
+        display: flex;
+        flex-wrap: nowrap;
+        height: 70px;
+      }
+      .logo {
+        height: 90px;
+        width: 100%;
+        margin-left: 10px;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+      hr {
+        width: 130px;
+        margin-left: 1px;
+        background-color: rgb(11, 17, 101);
+        height: 4px;
+        border: none;
+      }
+      .logo-h3 {
+        margin: 0px;
+        color: brown;
+      }
+      .logo-p {
+        margin-top: 5px !important;
+        margin: 0px;
+      }
+      .menu {
+        height: 80px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        /* font-size: 20px; */
+        font-weight: bold;
+      }
+      .m1 {
+        margin: 0px;
+        padding: 0px;
+        justify-content: flex-end;
+        align-content: center;
+        margin-left: 50px;
+        color: rgb(64, 66, 66);
+        cursor: pointer;
+      }
+      .m1:hover {
+        color: rgb(152, 25, 102);
+      }
+      .icon {
+        display: flex;
+        height: 80px;
+        width: 100%;
+        justify-content: end;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+      img {
+        width: 50px;
+        height: 50px;
+        margin: 0;
+        padding: 5px;
+        border-radius: 50%;
+      }
+      .banner-image {
+        background-image: url("../Image/banner-image.jpg");
+        height: 500px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: opacity(80%);
+        font-size: 50px;
+        text-align: justify;
+        align-content: center;
+      }
+      /* .opacity {filter: opacity(80%);} */
+      .text {
+        margin-left: 10px;
+        color: aliceblue;
+      }
+      .banner-p {
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+        margin-left: 10px;
+      }
+      .banner-button {
+        background-color: orangered;
+
+        width: 170px;
+        height: 40px;
+        color: aliceblue;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        margin-left: 10px;
+        font-weight: bold;
+        /* border: 1px solid rgb(14, 149, 126); */
+      }
+      .banner-button:hover {
+        font-weight: bold;
+        color: black;
+        box-shadow: 2px 6px 3px rgb(190, 199, 199);
+        background-color: rgb(231, 101, 53);
+      }
+
+      .part-3 {
+        width: 100%;
+        display: flex;
+      }
+      .part-one {
+        width: 100%;
+        height: 400px;
+        align-content: center;
+        text-align: center;
+        margin-right: 80px;
+        margin-left: 30px;
+        text-align: justify;
+      }
+      .part-two {
+        width: 100%;
+        display: flex;
+      }
+
+      .part-4 {
+        height: 250px;
+        background-color: rgb(87, 141, 138);
+        align-content: center;
+        text-align: center;
+        font-size: 20px;
+        font-family: sans-serif;
+        color: aliceblue;
+      }
+      .part-5 {
+        display: flex;
+        background: white;
+        justify-content: center;
+      }
+      .card {
+        height: 400px;
+        width: 390px;
+        margin: 10px;
+      }
+      .card-image {
+        height: 200px;
+        margin-bottom: 15px;
+      }
+
+      .bg-img1 {
+        background-image: url("../Image/bg-img1.jpeg");
+
+        background-size: cover;
+        border-radius: 5px;
+      }
+      .bg-img2 {
+        background-image: url("../Image/bg-img2.jpeg");
+
+        background-size: cover;
+        border-radius: 5px;
+      }
+      .bg-img3 {
+        background-image: url("../Image/bg-img4.jpg");
+
+        background-size: cover;
+        border-radius: 5px;
+      }
+      h2 {
+        color: rgb(75, 78, 80);
+        margin-top: 20px;
+      }
+      p {
+        margin-top: 15px;
+        text-align: justify;
+        color: rgb(114, 116, 117);
+      }
+      .learn-more {
+        background-color: white;
+        color: rgb(32, 93, 150);
+        border-color: rgb(43, 116, 211);
+        border-style: solid;
+        border-width: 1px;
+        height: 40px;
+        width: 90px;
+        margin-top: 20px;
+        border-radius: 2px;
+        cursor: pointer;
+        transition: background-color 0.15s;
+        color: 0.15;
+      }
+      .learn-more:hover {
+        background-color: rgb(43, 116, 211);
+        color: white;
+      }
+
+      .learn-more:active {
+        opacity: 0.7;
+      }
+
+      .part-6 {
+        margin-top: 70px;
+        display: flex;
+        width: 100%;
+      }
+      .left {
+        width: 50%;
+        background-color: rgb(21, 52, 71);
+        height: 300px;
+        align-content: center;
+        /* text-align: center; */
+      }
+      .right {
+        width: 50%;
+        background-color: rgb(21, 52, 71);
+        height: 300px;
+        align-content: center;
+        color: aliceblue;
+      }
+      .h-2,
+      .p1 {
+        color: rgb(212, 211, 211);
+        margin-left: 20px;
+      }
+      input[type="text"] {
+        background-color: rgb(157, 178, 191);
+        height: 40px;
+        border-radius: 5px;
+        width: 230px;
+        border: none;
+        color: rgb(6, 6, 6);
+      }
+      input[type="text"]:hover {
+        border: 2px solid rgb(14, 149, 126);
+        background-color: whitesmoke;
+      }
+      input[type="text"]:focus {
+        outline: none;
+      }
+      textarea {
+        margin-top: 10px;
+        background-color: rgb(157, 178, 191);
+        border-radius: 5px;
+        border: none;
+        color: rgb(6, 6, 6);
+      }
+      textarea:focus {
+        outline: none;
+      }
+      textarea:hover {
+        border: 2px solid rgb(14, 149, 126);
+        background-color: whitesmoke;
+      }
+      footer {
+        display: flex;
+        width: 100%;
+        background-color: beige;
+      }
+      .footer-logo {
+        background-color: rgba(20, 185, 197, 0.53);
+        width: 50%;
+        min-height: 100px;
+      }
+      .footer-icon {
+        background-color: rgba(197, 20, 144, 0.498);
+        width: 50%;
+        min-height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <div class="header">
+        <div class="logo">
+          <h3 class="logo-h3">SURRAVISTA</h3>
+          <hr />
+          <p class="logo-p">PEST CONTROL SERVICES</p>
+        </div>
+        <div class="menu">
+          <div class="m1">About</div>
+          <div class="m1">Services</div>
+          <div class="m1">Contact</div>
+        </div>
+        <div class="icon">
+          <img src="../Image/facebook.png" alt="" />
+          <img src="../Image/instagram.png" alt="" />
+          <img src="../Image/twitter.png" alt="" />
+        </div>
+      </div>
+      <div class="banner-image">
+        <div class="text">
+          Keeping famillies safe <br />
+          from toxins & pests
+        </div>
+        <p class="banner-p">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />
+          Suscipit temporibus nemo, quisquam facere quae <br />
+          excepturi eius nisi tempore nesciunt
+        </p>
+        <button class="banner-button">Book a free estimate</button>
+      </div>
+      <div class="part-3">
+        <div class="part-one">
+          <h1>About us</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Reprehenderit sint excepturi impedit architecto exercitationem?
+            Quidem ipsum nesciunt autem quibusdam qui ratione recusandae atque
+            mollitia perferendis. Modi excepturi accusamus cum soluta?
+          </p>
+          <button class="learn-more">Learn More</button>
+        </div>
+        <div class="part-two">
+          <img
+            style="width: 550px; height: 350px; border-radius: 12px"
+            src="../Image/part3.jpeg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="part-4">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br />
+        Vitae, placeat error architecto deleniti fugit in impedit laudantium,
+        debitis eveniet <br />
+        et consectetur neque alias tempora enim cumque optio iusto, commodi
+        adipisci. <br />et consectetur neque alias tempora enim cumque
+      </div>
+      <div class="part-5">
+        <div class="card">
+          <div class="card-image bg-img1"></div>
+          <h2>Insect Control</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+            expedita totam, earum nam sit fugiat. Vero beatae sapiente nobis
+            provident.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            expedita totam, earum nam sit fugiat. Vero beatae sapiente nobis
+          </p>
+          <button class="learn-more">Learn More</button>
+        </div>
+        <!-- card 2 -->
+        <div class="card">
+          <div class="card-image bg-img2"></div>
+          <h2>Rodent Control</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+            expedita totam, earum nam sit fugiat. Vero beatae sapiente nobis
+            provident.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            expedita totam, earum nam sit fugiat. Vero beatae sapiente nobis
+          </p>
+          <button class="learn-more">Learn More</button>
+        </div>
+        <!-- card 3 -->
+        <div class="card">
+          <div class="card-image bg-img3"></div>
+          <h2>Bird Control</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+            expedita totam, earum nam sit fugiat. Vero beatae sapiente nobis
+            provident.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            expedita totam, earum nam sit fugiat. Vero beatae sapiente nobis
+          </p>
+          <button class="learn-more">Learn More</button>
+        </div>
+      </div>
+      <div class="part-6">
+        <div class="left">
+          <h2 class="h-2">Get in tough</h2>
+          <p class="p1">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat,
+            consequuntur!
+          </p>
+        </div>
+        <div class="right">
+          <form action="">
+            <label for="">Name*</label><br />
+            <input type="text" id="name" name="name" />
+
+            <label for="email">Email Address*</label>
+            <input type="text" id="email" name="email" /><br /><br />
+
+            <label for="">Meaasge*</label><br />
+            <textarea name="" id="" rows="7" cols="84"></textarea>
+          </form>
+        </div>
+      </div>
+      <footer>
+        <div class="logo">
+          <h3 class="logo-h3">SURRAVISTA</h3>
+          <hr />
+          <p class="logo-p">PEST CONTROL SERVICES</p>
+        </div>
+        <div class="icon">
+          <img src="../Image/facebook.png" alt="" />
+          <img src="../Image/instagram.png" alt="" />
+          <img src="../Image/twitter.png" alt="" />
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>

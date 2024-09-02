@@ -1,0 +1,131 @@
+*{
+    margin: 0px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 70%;
+    border: 2px solid black;
+    /* height: ; */
+    background-color: rgb(234, 231, 234);
+}
+img{
+    /* border-radius: 30px; */
+    height: 60px;
+    width: 60px;
+}
+.head{
+    display: flex;
+}
+h4{
+    display: inline-block;
+}
+input[type="text"]:hover{
+    border: 2px solid rgb(39, 102, 120);
+   
+}
+input[type="text"]{
+    border: none; 
+    border-radius: 5px;
+    height:35px;
+}
+input[type="text"]:focus{
+    outline: none; 
+    
+}
+input[type="text"]:focus{
+    border: 2px solid rgb(39, 102, 120);
+    
+}
+
+/* section one */
+input[name="Applicant_Agency"]{
+    width: 600px;
+    margin-left: 25px;
+}
+/* section two */
+input[name="ISIS_Agency_Number"]{
+    width: 250px;
+}
+
+/* section 3 */
+input[name="checkbox"]{
+    margin-left: 50px;
+}
+input[name="Bank_Name_And_City"]{
+    width: 250px;
+    margin-top: 10px;
+}
+input[name="Account Name"]{
+    width: 250px;
+}
+input[name="Account Name2"]{
+    width: 250px;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+input[name="Account_number"]{
+    width: 250px;
+    margin-top: 10px;
+}
+input[name="type_of_account"]{
+    width: 250px;
+    margin-top: 10px;
+}
+input[name="Account_number"]{
+    width: 250px;
+    margin-left: 25px;
+}
+input[name="Purpose_account"]{
+    margin-top: 10px;
+    width: 600px;
+    margin-left: 25px;
+    height: 60px;
+}
+input[name="Date Approved by CMRB"]{
+    margin-top: 10px;
+    width: 181px;
+}
+input[name="section-eight"]{
+    margin-top: 10px;
+    width: 820px;
+    height: 60px;
+}
+textarea{
+    border-radius: 10px;
+    border: none;
+}
+textarea:hover{
+    border: 2px solid rgb(39, 102, 120);
+}
+textarea:focus{
+    outline: none; 
+}
+input[name="submitted"]{
+    margin-top: 10px;
+    border: 1px solid black;
+}
+input[type="date"]{
+    border-radius: 5px;
+    width:140px;
+    height: 40px;
+}
+input[type="date"]:hover{
+    border: 2px solid rgb(39, 102, 120);
+}
+
+input[type="submit"]{
+  width: 100px;
+  height: 35px;
+  background-color: rgb(14, 118, 83);
+  color: aliceblue;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+input[type="submit"]:hover{
+    border: 2px solid rgb(0, 1, 1);
+}
+
